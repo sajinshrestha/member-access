@@ -1,0 +1,25 @@
+<input type="text" ng-model="searchText">
+<div class="row">       
+    <div class="col-md-5 box" ng-repeat="household in apiData | filter:searchText">
+        <div class="picture">
+            <img ng-src="{{household.thumbnail}}" />
+        </div>
+        <div class="directory">
+            <strong>{{household.first_name}} {{household.last_name}}</strong> </br >           
+            {{household.address_1}}<br>
+            {{household.city}}, {{household.state}} {{household.zip}} <br>
+            <abbr title="Phone">Phone:</abbr> {{household.phone}} <br>
+            Email: <a href="mailto:{{household.email}}">{{household.email}}</a> <br>
+            <span style="font-size: 90%;" ng-repeat="member in household.members">
+            <strong>{{member.first_name}}</strong>
+                <!-- <div ng-repeat="phone in member.phones">
+                    {{phone.id}}:  {{phone.phone}}
+                </div>
+                <div ng-repeat="email in member.emails">
+                    {{email.id}}:  {{email.email}}
+                </div> -->
+            </span> 
+        </div>    
+    </div>
+</div>
+            

@@ -1,0 +1,48 @@
+<div class="col-md-8">
+    <div class="tabbable"> <!-- Only required for left/right tabs -->
+        <ul class="nav nav-tabs">
+            <li class="active"><a href="#tab1" data-toggle="tab">Family Information</a></li>
+            <li><a href="#tab2" data-toggle="tab">Individual Information</a></li>
+        </ul>
+        <div class="tab-content">
+            <div class="tab-pane active" id="tab1">
+                <p class="text-right"><a href="#">Edit</a></p>
+                <h2>{{apiData[ 1 ].mail_to}}</h2>
+                <address>
+                    {{apiData[ 1 ].address_1}}<br>
+                    {{apiData[ 1 ].city}}, {{households[ 1 ].state}} {{apiData[ 1 ].zip}} <br>
+                    <abbr title="Phone">P:</abbr> {{apiData[ 1 ].phone}} <br>
+                    <a href="mailto:#">{{apiData[ 1 ].email}}</a>
+                </address>
+
+                <hr>
+                <div class="groups">
+                    <h4>Groups you belong to:</h4>
+                        {{groups}}
+                    <ul>
+                        <li ng-repeat=" group in groups">{{group.category}}</li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="tab-pane" id="tab2">
+                <p class="text-right"><a href="#">Edit</a></p>
+                <div ng-repeat="member in apiData[ 1 ].members">
+                    <strong>{{member.first_name}} {{member.last_name}}</strong> <br />
+                    Birthdate: {{member.birth_date}}
+                    <div ng-repeat="phone in member.phones">
+                        {{phone.id}}:  {{phone.phone}}
+                    </div>
+                    <div ng-repeat="email in member.emails">
+                        {{email.id}}:  {{email.email}}
+                    </div>
+                    <br />
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="col-md-4 household-picture">
+    <img class="img-polaroid" alt="Hasmukh & Maritsa Ashton" ng-src="{{apiData[0].picture}}">
+</div>

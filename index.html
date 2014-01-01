@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en" ng-app= "parishionerApp">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>IconCMO Parishioner's Module</title>
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
+    <link href="parishioner.css" rel="stylesheet">
+</head>
+
+<body>
+    <div id="wrap"> 
+        <!-- Fixed navbar -->
+        <div class="navbar navbar-default navbar-fixed-top" role="navigation">
+            <div class="container">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand" href="">IconCMO</a>
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="#main"><span class="glyphicon glyphicon-home"></span> Home</a></li>
+                        <li><a href="#contributions"><span class="glyphicon glyphicon-envelope"></span>  Financial Information</a></li>
+                        <li><a href="#directory"><span class="glyphicon glyphicon-picture"></span>  Church Directory</a></li>
+                        <li><a href="#user"><span class="glyphicon glyphicon-user"></span> Logged in as Gene</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        <!-- Begin page content -->
+        <div class="container">
+            <div class="row">
+                <div ng-view></div>
+            </div>
+            
+        </div>
+        
+    </div>
+
+    <!-- Fixed footer -->
+    <div id="footer">
+        <div class="container">
+            <p class="text-muted">Powered by <a href="http://www.iconcmo.com">Icon Systems, Inc.</a>  &copy; 1992 - 2013.</p>
+        </div>
+    </div>
+
+    <!-- Le javascript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.0.7/angular.min.js"></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.1/jquery.min.js"></script>
+    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="scripts/parishioner.js"></script>
+    <script src="scripts/controllers.js"></script>
+</body>
+</html>
