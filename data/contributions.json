@@ -17,7 +17,25 @@
       ,"household_last_name": "Abar"
       ,"member_id": null
       ,"member_first_name": null
-      ,"type": "Check"
+      ,"type": "Cash"
+      ,"comment": null
+      ,"fund_id": "15"
+      ,"fund_name": "General Fund"
+    }
+    ,{
+      "id": "8-10"
+      ,"check_number": "2210"
+      ,"date_given": "2013-01-20"
+      ,"fiscal_year": "2013"
+      ,"amount": "$875.00"
+      ,"envelope_id": "1214"
+      ,"envelope_number": "1"
+      ,"household_id": "707"
+      ,"household_first_name": "Anjeneya"
+      ,"household_last_name": "Abar"
+      ,"member_id": null
+      ,"member_first_name": null
+      ,"type": "Cash"
       ,"comment": null
       ,"fund_id": "15"
       ,"fund_name": "General Fund"
@@ -35,7 +53,7 @@
       ,"household_last_name": "Abar"
       ,"member_id": null
       ,"member_first_name": null
-      ,"type": "Check"
+      ,"type": "Cash"
       ,"comment": null
       ,"fund_id": "15"
       ,"fund_name": "General Fund"
@@ -56,7 +74,7 @@
       ,"type": "Check"
       ,"comment": null
       ,"fund_id": "15"
-      ,"fund_name": "General Fund"
+      ,"fund_name": "Building Fund"
     }
     ,{
       "id": "22-10"
@@ -74,7 +92,7 @@
       ,"type": "Check"
       ,"comment": null
       ,"fund_id": "15"
-      ,"fund_name": "General Fund"
+      ,"fund_name": "Building Fund"
     }
     ,{
       "id": "110-10"
